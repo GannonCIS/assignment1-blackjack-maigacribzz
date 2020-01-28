@@ -8,7 +8,15 @@ package blackjack;
 /**
  *
  * @author gubotdev
- */
+ */ 
 public class Card {
+    
+    public final String RANK;
+    public final String SUIT;
+    
+    public Card(String rank,String suit){
+        RANK = rank;
+        SUIT = suit;
+    }
     
 }

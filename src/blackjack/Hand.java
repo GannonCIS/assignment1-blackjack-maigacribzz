@@ -9,6 +9,6 @@ package blackjack;
  *
  * @author gubotdev
  */
-public class Hand {
+
+
     
-}
