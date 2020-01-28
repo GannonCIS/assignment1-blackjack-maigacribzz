@@ -10,10 +10,10 @@ package blackjack;
  * @author gubotdev
  */
 public class Deck {
-    private Card[] myCards = new Card[52];
-    private String[] ranks = {};
-    private String[] suits = {};
-    private int nextCard = 0;
+    private final Card[] myCards = new Card[52];
+    private final String[] ranks = {};
+    private final String[] suits = {};
+    private final int nextCard = 0;
     
     public Deck(){
         
