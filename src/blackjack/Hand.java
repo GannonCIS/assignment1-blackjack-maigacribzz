@@ -9,6 +9,24 @@ package blackjack;
  *
  * @author gubotdev
  */
-
+public class Hand {
+    private final Card[] mycards = new Card[5];
+    private final int numOfCards = 0;
+    private final int score = 0;
+    
+    public Hand() {}
+    
+    public int getnumOfCards() {
+            return numOfCards;
+        }
+        
+        public void addCard(Card newCard) {
+            
+        }
+        
+        public void printHand () {
+            
+        }
+    }
 
     
