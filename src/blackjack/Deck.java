@@ -18,6 +18,7 @@ public class Deck {
     
     public Deck(){
         initDeck();
+        shuffle();
         
     }
     
@@ -32,6 +33,13 @@ public class Deck {
     }
     
     private void shuffle(){
+        for(int i = 0; i < myCards.length; i++){
+            Card temp = myCards[i];
+            int rand = (int)(Math.random()*52);
+            myCards[i] = myCards[rand];
+            myCards[rand] = temp;
+        
+    }
         
     }
     
