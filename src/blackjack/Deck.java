@@ -14,7 +14,7 @@ public class Deck {
     private final String[] ranks = {"Ace","2","3","4","5","6","7","8","9","10"
             ,"Jack","Queen","King"};
     private final String[] suits = {"Clubs","Diamonds","Hearts","Spades"};
-    private final int nextCard = 0;
+    private int nextCard = 0;
     
     public Deck(){
         initDeck();
@@ -53,12 +53,12 @@ public class Deck {
     
     public Card dealCard(){
         
-        return null; //do not forget to change this!
-    }
-
-    private static class Cards {
-
-        public Cards() {
+        Card next = myCards[nextCard];
+        nextCard++;
+        if(nextCard > 51){
+            shuffle();
+            nextCard = 0;
         }
+        return next; //do not forget to change this!
     }
 }
